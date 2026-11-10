@@ -76,3 +76,15 @@ More folders and projects will be added as the internship progresses.
 3. Open any HTML file.
 4. Right-click and select Open with Live Server.
 5. View the project in your browser.
+
+👨‍🎓 Author
+
+Sri Krishna Gopal Yadav
+
+B.Tech – Computer Science and Engineering
+
+GitHub: Gopalx2357
+
+⸻
+
+⭐ This repository represents my 6-week learning journey in Web Development at InternNova.
