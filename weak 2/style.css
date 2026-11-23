@@ -1,0 +1,408 @@
+/* =====================================================
+   WEEK 2 CSS FUNDAMENTALS - PERSONAL PORTFOLIO
+   Tasks covered: Selectors, Box Model, Flexbox, Grid,
+   Media Queries and Mini CSS Project
+   ===================================================== */
+
+/* TASK 1: Universal selector and CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TASK 1: Element selector, colors, background and font */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fc;
+    color: #263248;
+    line-height: 1.6;
+}
+
+/* TASK 1 + TASK 2: Header styling and box model */
+.site-header {
+    min-height: 560px;
+    padding: 22px 8% 70px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #14213d, #244b83);
+}
+
+/* TASK 3: Flexbox navigation */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 10px 0 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span,
+.hero h1 span {
+    color: #65d6c4;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #65d6c4;
+}
+
+/* TASK 3: Hero content arranged with Flexbox */
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    padding-top: 85px;
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.eyebrow {
+    color: #168b82;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.site-header .eyebrow {
+    color: #65d6c4;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    color: #dbeafe;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    max-width: 540px;
+    color: #e2e8f0;
+    margin-bottom: 25px;
+}
+
+/* TASK 2: Width, padding, border, radius and shadow */
+.hero-card {
+    width: 230px;
+    min-height: 250px;
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 22px;
+    background-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    text-align: center;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background-color: #65d6c4;
+    color: #14213d;
+    font-size: 58px;
+    font-weight: bold;
+}
+
+.hero-card h3 {
+    font-size: 22px;
+}
+
+.hero-card p {
+    color: #dbeafe;
+    font-size: 14px;
+}
+
+/* Reusable button */
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #65d6c4;
+    color: #14213d;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #8be6d8;
+    transform: translateY(-3px);
+}
+
+/* TASK 2: Main section width, margin, padding and alignment */
+.section {
+    width: 84%;
+    max-width: 1100px;
+    margin: 55px auto;
+    padding: 35px;
+}
+
+.section-title {
+    margin-bottom: 22px;
+    color: #172d50;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* TASK 2: Card with border radius and box shadow */
+.card {
+    border: 1px solid #e1e8f2;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(26, 48, 82, 0.08);
+}
+
+.about-card {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.about-card p:last-child {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+/* TASK 3: Flex container and flex items */
+.skills-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    min-height: 75px;
+    padding: 18px;
+    border: 1px solid #c8e7e3;
+    border-radius: 12px;
+    background-color: #e9f8f5;
+    color: #17665f;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(26, 48, 82, 0.06);
+    transition: transform 0.2s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+/* TASK 4: CSS Grid container, columns, rows and gap */
+.projects-section {
+    padding: 35px;
+    border-radius: 16px;
+    background-color: #eaf0fa;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+/* TASK 2 + TASK 4: Grid items and box model */
+.project-card {
+    min-height: 205px;
+    padding: 25px;
+    border: 1px solid #d8e2f0;
+    border-radius: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 16px rgba(26, 48, 82, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(26, 48, 82, 0.12);
+}
+
+.project-number {
+    color: #168b82;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.project-card h3 {
+    margin: 9px 0;
+    color: #172d50;
+    font-size: 19px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    color: #586579;
+    font-size: 14px;
+}
+
+.project-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #e9f8f5;
+    color: #17665f;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* TASK 2: Contact card spacing and alignment */
+.contact-card {
+    text-align: center;
+}
+
+.contact-card p:not(.eyebrow) {
+    margin-bottom: 22px;
+}
+
+/* Footer */
+.site-footer {
+    padding: 22px;
+    background-color: #14213d;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* TASK 5: Tablet responsive design */
+@media (max-width: 900px) {
+    .site-header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero {
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .section {
+        width: 90%;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* TASK 5: Mobile responsive design */
+@media (max-width: 600px) {
+    .site-header {
+        min-height: auto;
+        padding: 18px 5% 50px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero-card {
+        width: 210px;
+        min-height: auto;
+    }
+
+    .section {
+        width: 92%;
+        margin: 35px auto;
+        padding: 24px 18px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .skills-flex {
+        gap: 12px;
+    }
+
+    .skill-item {
+        width: calc(50% - 8px);
+        min-height: 62px;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .project-card {
+        min-height: auto;
+    }
+}
