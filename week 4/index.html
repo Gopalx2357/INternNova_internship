@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 - JavaScript Fundamentals Part 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Fundamentals - Week 4</h1>
+        <p>Functions, Arrays, Objects, DOM Manipulation and Events</p>
+    </header>
+
+    <nav>
+        <a href="#functions">Task 1</a>
+        <a href="#arrays">Task 2</a>
+        <a href="#objects">Task 3</a>
+        <a href="#dom">Task 4</a>
+        <a href="#events">Task 5</a>
+        <a href="#project">Task 6</a>
+    </nav>
+
+    <main>
+        <section id="functions" class="card">
+            <h2>Task 1: JavaScript Functions</h2>
+            <p>Examples of function declaration, parameters, arguments, return values and arrow functions.</p>
+            <div class="controls">
+                <input type="number" id="marks1" placeholder="Subject 1 marks" min="0" max="100">
+                <input type="number" id="marks2" placeholder="Subject 2 marks" min="0" max="100">
+                <input type="number" id="marks3" placeholder="Subject 3 marks" min="0" max="100">
+                <button id="calculateMarks">Calculate Result</button>
+            </div>
+            <p id="functionResult" class="result">Enter marks to calculate the result.</p>
+            <button id="greetButton">Generate Greeting</button>
+            <p id="greetingResult" class="result"></p>
+        </section>
+
+        <section id="arrays" class="card">
+            <h2>Task 2: Arrays</h2>
+            <p>Student names are stored in an array. Add, update, remove and display names.</p>
+            <div class="controls">
+                <input type="text" id="studentName" placeholder="Enter student name">
+                <button id="addStudent">Add Name</button>
+            </div>
+            <div class="controls">
+                <input type="text" id="oldStudentName" placeholder="Name to update/remove">
+                <input type="text" id="newStudentName" placeholder="New name">
+                <button id="updateStudent">Update Name</button>
+                <button id="removeStudent">Remove Name</button>
+            </div>
+            <button id="showStudents">Display Students</button>
+            <ul id="studentList"></ul>
+            <p id="arrayResult" class="result"></p>
+        </section>
+
+        <section id="objects" class="card">
+            <h2>Task 3: Objects</h2>
+            <p>Three student objects with properties. You can update, add and delete object properties.</p>
+            <div class="controls">
+                <input type="text" id="objectName" placeholder="Student name">
+                <input type="number" id="objectAge" placeholder="Age">
+                <button id="updateObject">Update First Student</button>
+                <button id="addObjectProperty">Add Course Property</button>
+                <button id="deleteObjectProperty">Delete Age Property</button>
+            </div>
+            <div id="objectOutput" class="output"></div>
+        </section>
+
+        <section id="dom" class="card">
+            <h2>Task 4: DOM Manipulation</h2>
+            <p id="domText">This text will change when you click the button.</p>
+            <div class="controls">
+                <button id="changeText">Change Text</button>
+                <button id="changeStyle">Change CSS Style</button>
+                <button id="addItem">Add List Item</button>
+                <button id="removeItem">Remove Last Item</button>
+            </div>
+            <ul id="domList"><li>First item</li></ul>
+            <div id="dynamicContent" class="result">HTML content can also be updated here.</div>
+        </section>
+
+        <section id="events" class="card">
+            <h2>Task 5: JavaScript Events</h2>
+            <p>Try click, input, change, submit, mouse and keyboard events.</p>
+            <div class="controls">
+                <input type="text" id="liveInput" placeholder="Type something">
+                <select id="courseSelect">
+                    <option value="">Choose a course</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="C++">C++</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+            <p id="inputOutput" class="result">Your typed text will appear here.</p>
+            <p id="changeOutput" class="result">Your selected course will appear here.</p>
+            <form id="simpleForm">
+                <input type="text" id="formName" placeholder="Enter your name" required>
+                <button type="submit">Submit Form</button>
+            </form>
+            <p id="formOutput" class="result"></p>
+            <button id="mouseButton">Move Mouse Over Me</button>
+            <p id="keyOutput" class="result">Press any key while this page is active.</p>
+        </section>
+
+        <section id="project" class="card">
+            <h2>Task 6: Mini Project - To-Do List</h2>
+            <p>Add tasks, mark them completed and delete them. Tasks are stored in an array of objects.</p>
+            <form id="todoForm" class="controls">
+                <input type="text" id="todoInput" placeholder="Enter a task" required>
+                <button type="submit">Add Task</button>
+            </form>
+            <p id="todoCount" class="result">Total tasks: 0</p>
+            <ul id="todoList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Week 4 JavaScript Assignment | Sri Krishna Gopal Yadav | CSE</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
